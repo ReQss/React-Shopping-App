@@ -1,5 +1,5 @@
 import React from "react";
-function Header(props){
+function Navbar(props){
     const [searchText,setSearchText] = React.useState("");
    
     return(
@@ -23,4 +23,4 @@ function Header(props){
       </div>
     </div>
     )
-}export default Header;
+}export default Navbar;
