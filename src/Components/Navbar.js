@@ -5,17 +5,17 @@ function Navbar(props){
     return(
         <div className="navbar">
      
-      <a href="index.html">
+      <a href="home">
         <img 
         width="49"
-        height="45"
+        height="30"
         src="logo.png"></img>
       </a>
       <div>
       <ul className="nav-menu">
-      <li><a href="index.html">Kontakt</a></li>
-      <li><a href="index.html">Login</a></li>
-      <li><a href="index.html">Rejestracja</a></li>
+      <li><a href="contact">Kontakt</a></li>
+      <li><a href="login">Login</a></li>
+      <li><a href="register">Rejestracja</a></li>
       </ul>
       </div>
       <div className="mobile">
