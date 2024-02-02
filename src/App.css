@@ -1,3 +1,8 @@
+.content{
+  display:flex;
+  justify-content:center;
+ 
+}
 .navbar{
   /* font-family: 'Brush Script MT', cursive;
   position:fixed;
@@ -22,6 +27,7 @@
   align-items:center;
   justify-content:center;
 }
+
 .nav-menu li{
   list-style:none;
   padding:0 20px;
@@ -38,7 +44,18 @@
 }
 @media screen and (max-width:968px){
   .nav-menu{
-    display:none;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+  position:fixed;
+  top:75px;
+  right:0px;
+  background-color:#2a3239;
+  height:100vh;
+  padding: 40px 0 0 10px;
+  box-shadow: 0 40px 60px rgb(0,0,0,0);
+  
   }
 }
 .mobile{
@@ -56,6 +73,7 @@
   height: 84vh;
   display: flex;
   flex-direction: column;
+  /* background-color:black; */
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, #effaff 0%, #d9e7ff 100%);
@@ -65,9 +83,6 @@ h1 {
   font-size: 48px;
   font-weight: 800;
   padding-bottom: 10px;
-  background: -webkit-linear-gradient(45deg, #09009f, #32d390 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -81,4 +96,62 @@ h3 {
   font-size: 22px;
   letter-spacing: 2px;
   color: #fff;
+}
+.Login{
+  margin-top:5vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  /* margin-left:5vh; */
+  width:45%;
+  height:80vh;
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  background:#1b2430;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(123, 189, 255, 0.3);
+  font-family: 'Brush Script MT', cursive;
+}
+.Login input{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline:none;
+  border:1px solid rgba(123, 189, 255, 1);
+  border-radius:16px;
+}
+.Login input::placeholder{
+  color:white;
+}
+p{
+  font-size:30px;
+}
+.userForm{
+  text-align: center;
+  
+}
+.menu-button{
+  margin-bottom:20px;
+  width:90%;
+  padding: 10px 20px;
+  border-radius:16px;
+  cursor: pointer; 
+  background: rgba(123, 189, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(123, 189, 255, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .menu-button {
+    width: 70%; 
+    padding: 12px; 
+    margin-bottom: 10px;
+  }
+}
+.menu-button:hover {
+  background: rgba(255, 255, 255, 0.4); 
 }
