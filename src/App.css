@@ -1,5 +1,5 @@
-.header{
-  font-family: 'Brush Script MT', cursive;
+.navbar{
+  /* font-family: 'Brush Script MT', cursive;
   position:fixed;
   width:100%;
   height:10vh;
@@ -7,11 +7,47 @@
   justify-content: space-between;
   align-items: center;
   background: rgba(123, 189, 255, 0.03);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(123, 189, 255, 0.3);
-  
+  border: 1px solid rgba(123, 189, 255, 0.3); */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#1b2430;
+  padding:10px 20px;
+}
+.nav-menu{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.nav-menu li{
+  list-style:none;
+  padding:0 20px;
+  position:relative;
+}
+.nav-menu a{
+  text-decoration:none;
+  font-size:1.3rem;
+  font-weight:600;
+  color:#fff;
+}
+.nav-menu a:hover{
+  color:#17cf97;
+}
+@media screen and (max-width:968px){
+  .nav-menu{
+    display:none;
+  }
+}
+.mobile{
+  font-size:30px;
+  display:none;
+}
+@media screen and (max-width:968px){
+.mobile{
+    display:block;
+    color:white;
+}
 }
