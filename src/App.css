@@ -74,6 +74,7 @@
     font-size:22px;
     font-weight:500;
   }
+
 }
 
 .Login{
@@ -131,4 +132,14 @@
 }
 .menu-button:hover {
   background: rgba(255, 255, 255, 0.4); 
+}
+.contact{
+    align-items:center;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+.contact h1{
+  justify-content:center;
 }

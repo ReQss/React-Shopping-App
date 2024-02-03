@@ -7,7 +7,7 @@ import nav_dropdown from '../Assets/dropdown.png'
 function Navbar(props){
     const [searchText,setSearchText] = React.useState("");
     const [menuState, setMenuState] = React.useState(true);
-    const [menu,setMenu] = useState("shop");
+    const [menu,setMenu] = useState("");
     const menuRef = useRef();
     const dropdown_toggle = (e) =>{
         menuRef.current.classList.toggle('nav-menu-visible');
@@ -15,7 +15,7 @@ function Navbar(props){
     }
     return(
         <div className="navbar">
-          <div className="nav-logo">
+          <div  onClick={() => { setMenu("") }} className="nav-logo">
            <Link to="/"> <img 
             width="49"
             height="30"
