@@ -1,8 +1,8 @@
 import React from "react";
-function Contact(){
+function Shop(){
     return(
     <div className="home">
-        <h2>Contact</h2>
+        <h2>Shop</h2>
     </div>
     )
-}export default Contact;
+}export default Shop;

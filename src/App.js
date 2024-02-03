@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import './styles/Navbar.css'
 import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Contact from './Components/Contact'
 import Register from './Components/Register'
+import Shop from './Components/Shop'
 function App() {
   return (
     <Router>
@@ -13,8 +14,9 @@ function App() {
         <Navbar />
         <div className='content'>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/register" element={<Register />} />
         </Routes>
         </div>
