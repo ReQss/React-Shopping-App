@@ -1,48 +1,81 @@
-.content{
+
+.hero {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+.hero-left{
+  flex:1;
   display:flex;
+  flex-direction:column;
   justify-content:center;
+  gap:20px;
+  padding-left:140px;
+  line-height:1.1;
+}
+.hero-right{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-right:40px;
+  /* width:30%; */
+  /* padding:80px; */
  
 }
-
-.mobile{
-  font-size:30px;
-  display:none;
+.hero-right img{
+  width:100%;
 }
-@media screen and (max-width:968px){
-.mobile{
-    display:block;
+
+.hero-latest-btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  width:250px;
+  height:70px;
+  border-radius:75px;
+  margin-top:30px;
+  background:#ff4141;
+  color:white;
+  font-size:22px;
+  font-weight:500;
+}
+.hero-latest-btn:active{
+  background:#ff7141;
+}
+.nav-link {
+  text-decoration: none;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .hero-left{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+    padding-left:50px;
+    line-height:1.1;
+  }
+  .hero-latest-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    width:250px;
+    height:70px;
+    border-radius:75px;
+    margin-top:30px;
+    background:#ff4141;
     color:white;
-}
-}
-.home {
-  width: 100%;
-  height: 84vh;
-  display: flex;
-  flex-direction: column;
-  /* background-color:black; */
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, #effaff 0%, #d9e7ff 100%);
+    font-size:22px;
+    font-weight:500;
+  }
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: 800;
-  padding-bottom: 10px;
-}
-
-h3 {
-  background: radial-gradient(
-    circle at -3.1% -4.3%,
-    rgb(57, 255, 186) 0%,
-    rgb(21, 38, 82) 90%
-  );
-  padding: 1rem 2rem;
-  border-radius: 6px;
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: #fff;
-}
 .Login{
   margin-top:5vh;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -72,9 +105,7 @@ h3 {
 .Login input::placeholder{
   color:white;
 }
-p{
-  font-size:30px;
-}
+
 .userForm{
   text-align: center;
   
