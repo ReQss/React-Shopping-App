@@ -1,84 +1,81 @@
-.shop{
-    align-items:center;
-    height: 100vh;
-    display: flex;
-    flex-direction:column;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+.shop {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
 }
-.shop h1{
-    justify-content:center;
+.shop h1 {
+  justify-content: center;
 }
-.shop-electronics{
-    display:flex;
-    flex-direction:column;
-    align-items:start;
-    width:100%;
-   
+.shop-electronics {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
 }
-.section-title{
-    width:100%;
-    display:flex;
-    text-align:center;
-    justify-content:center;
-   
-   
+.section-title {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.shop-games{
-    display:flex;
-    flex-direction:column;
-    align-items:start;
-    width:100%;
+.shop-games {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
 }
-shop-games h2{
-    
+shop-games h2 {
 }
-.product-list{
-    padding-left:40px;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:start;
+.product-list {
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
 }
-.shopping-card{
-    flex-wrap:wrap;
-    display:flex;
-    text-align:center;
-    border:black;
-    width:17rem;
-   
-   /* margin-left:20rem; */
-   /* margin-top:2rem; */
-   /* z-index:-2; */
-  
-  
+.shopping-card {
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  border: black;
+  width: 17rem;
+
+  /* margin-left:20rem; */
+  /* margin-top:2rem; */
+  /* z-index:-2; */
 }
-.card{
-   
-    margin:20px;
-    border:2px solid #ededed;
-    padding:20px;
-    background:#ffffff;
-   
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  background: #ffffff;
 }
 
-.card img{
-    width:13rem;
-    height:200px;
-    margin-bottom:1rem;
+.card img {
+  width: 13rem;
+  height: 200px;
+  margin-bottom: 1rem;
 }
-.card-title{
-    margin-bottom:1rem;
-    height:50px;
+.card-title {
+  margin-bottom: 1rem;
+  height: 50px;
 }
-.card button{
-    width:70px;
-    height:28px;
-    border:1px solid #7a7a7a;
-    border-radius:2px;
-    font-size:17px;
-    background:white;
-    cursor:pointer;
-    transition:0.3s;
+.card button {
+  width: 70px;
+  height: 28px;
+  border: 1px solid #7a7a7a;
+  border-radius: 2px;
+  font-size: 17px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.card button:hover{
-    transform:scale(1.2);
+.card button:hover {
+  transform: scale(1.2);
+}
+hr.solid {
+  border-top: 3px solid #b8b8b8;
+  width: 90%;
 }

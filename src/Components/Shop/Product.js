@@ -6,7 +6,7 @@ function Product(props){
         <div className="card">
       
         <img src={props.imageSrc}></img>
-       
+        
         <div className="card-details">
         <h3 className="card-title">{props.productName}</h3>
         </div>

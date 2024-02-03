@@ -2,12 +2,13 @@ import React from "react";
 import Product from './Product'
 function Games(){
     return(
-    <div className="shop-games">
-        <div className="section-title">
-        <h2>Games</h2>
-      
-        </div>
+        <div className="shop-games">
+            <div className="section-title">
        
+        <h2>Games</h2>
+      <hr class="solid"/>
+        </div>
+        
         <div className="product-list">
         <Product
         productName="The Legend Of Zelda: Breath Of The Wild"

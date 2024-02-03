@@ -5,7 +5,8 @@ function Electronics(){
     return(
     <div className="shop-electronics">
        <div className="section-title">
-        <h2>Electronics</h2>
+                <h2>Electronics</h2>
+                  <hr class="solid"/>
         </div>
         <div className="product-list">
         <Product
