@@ -1,4 +1,5 @@
 import React from "react";
+import Alert from 'react'
 function Contact() {
     const [formData, setFormData] = React.useState({
         firstName: "",
@@ -6,7 +7,6 @@ function Contact() {
         email: "",
         message:""
     })
-    console.log(formData)
     function handleChange(event) {
         setFormData(prevFormData => {
             return {
@@ -15,11 +15,23 @@ function Contact() {
             }
         })
     }
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(formData);
+         setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: ""
+        });
+    }
+   
     return(
     <div className="contact">
-            <h1>Contact us</h1>
-            <hr className="solid"/>
-            <div className="contactForm">
+            <h2>Contact us</h2>
+            <hr className="solid" />
+            <form className="contactForm" onSubmit={handleSubmit}>
+          
                 <h4>Hours</h4>
                 <p>Monday- Friday 10:00am - 7:30pm</p>
                 <p>Sunday- Saturday 10:00am - 6pm</p>
@@ -32,7 +44,7 @@ function Contact() {
                     type="text"
                     onChange={handleChange}
                     name="firstName"
-                    value={formData.firstname}
+                    value={formData.firstName}
                 />
                 <input
                     placeholder="Last name"
@@ -58,8 +70,8 @@ function Contact() {
                 />
                 
             </div>
-             <input value="Send" placeholder="Send" className="submit-input" type="submit"></input>
-           </div>
+             <input  value="Send" placeholder="Send" className="submit-input" type="submit"></input>
+           </form>
     </div>
     )
 }export default Contact;

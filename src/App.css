@@ -137,17 +137,13 @@
   background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
 }
 .contactForm {
+  width: 50%;
   align-items: start;
 }
 
 @media screen and (max-width: 1024px) {
   .contactForm {
     width: 70%;
-  }
-}
-@media screen and (max-width: 1920px) {
-  .contactForm {
-    width: 50%;
   }
 }
 
@@ -202,6 +198,10 @@ textarea {
 
   /* background: #ff4141; */
   border: 1px solid #626262;
+  transition: 0.3s;
+}
+.submit-input:active {
+  background: #626262;
 }
 
 hr.solid {
