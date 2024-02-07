@@ -1,6 +1,6 @@
 import React from "react";
 import Product from './Product'
-function Games(){
+function Games(props){
     return(
         <div className="shop-games">
             <div className="section-title">
@@ -8,23 +8,20 @@ function Games(){
         <h2>Games</h2>
       <hr class="solid"/>
         </div>
+            <div className="product-list">
+                {props.products.map(record => {
+                    return (
+                        <Product
+                            key={record.id}
+                            productName={record.productName}
+                            imageSrc={record.imageSrc}
+                            price={record.price}
+                            quantity={record.quantity}
+                            increaseQuantity = {props.increaseQuantity}
+                        />
+                    )
+                })}
         
-        <div className="product-list">
-        <Product
-        productName="The Legend Of Zelda: Breath Of The Wild"
-        imageSrc="zelda.jpg"
-        price="30"
-        ></Product>
-        <Product
-        productName="Nintendo New Super Mario Bros U Deluxe "
-        imageSrc="mario.jpg"
-        price="30"
-        ></Product>
-        <Product
-        productName="Persona 5 Royal PS5"
-        imageSrc="persona.jpg"
-        price="30"
-        ></Product>
         </div>
     </div>
     )

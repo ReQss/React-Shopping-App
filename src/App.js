@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Contact from './Components/Contact'
 import Register from './Components/Register'
 import Shop from './Components/Shop'
+import ShopCart from './Components/ShopCart'
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/shopcart" element={<ShopCart />} />
         </Routes>
         
       </div>

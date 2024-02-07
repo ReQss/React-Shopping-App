@@ -1,0 +1,33 @@
+ [
+    {
+        "id":1,
+        "productName": "Playstation 3",
+        "imageSrc": "data_images/playstation.png",
+        "price": "1300"
+    },
+    {
+        "id":2,
+        "productName": "Xbox One",
+        "imageSrc": "data_images/xbox.png",
+        "price": "900"
+    },
+    {
+        "id":3,
+        "productName": "Nintendo Switch 32GB",
+        "imageSrc": "data_images/nintendo.png",
+        "price": "700"
+    },
+    {
+        "id":4,
+        "productName": "Playstation 4",
+        "imageSrc": "data_images/playstation.png",
+        "price": "1500"
+    },
+     {
+        "id":5,
+        "productName": "Pegazus",
+        "imageSrc": "data_images/pegasus.jfif",
+        "price": "100"
+    }
+
+]

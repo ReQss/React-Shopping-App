@@ -5,8 +5,6 @@ import cart_icon from '../Assets/cart_icon.png'
 import { Link } from "react-router-dom";
 import nav_dropdown from '../Assets/dropdown.png'
 function Navbar(props){
-    const [searchText,setSearchText] = React.useState("");
-    const [menuState, setMenuState] = React.useState(true);
     const [menu,setMenu] = useState("");
     const menuRef = useRef();
     const dropdown_toggle = (e) =>{
@@ -16,10 +14,12 @@ function Navbar(props){
     return(
         <div className="navbar">
           <div  onClick={() => { setMenu("") }} className="nav-logo">
-           <Link to="/"> <img 
+          <Link to="/">
+            <img 
             width="49"
             height="30"
-            src={logo}></img>
+            src={logo}
+            />
             </Link>
           </div>
           <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
@@ -35,8 +35,8 @@ function Navbar(props){
           <div className="nav-login-cart">
           <Link to="/Login"><button>Login</button></Link>
             
-            <img src={cart_icon}></img>
-            <div className="nav-cart-count">0</div>
+          <Link to="/ShopCart"><img src={cart_icon}></img></Link>
+          <div className="nav-cart-count">0</div>
           </div>
     </div>
     )

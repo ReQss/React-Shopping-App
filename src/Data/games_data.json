@@ -1,0 +1,22 @@
+ [
+    {
+        "id":1,
+        "productName":"The Legend Of Zelda: Breath Of The Wild",
+        "imageSrc":"data_images/zelda.jpg",
+        "price":30
+    },
+    {
+        "id":2,
+        "productName": "Nintendo New Super Mario Bros U Deluxe",
+        "imageSrc": "data_images/mario.jpg",
+        "price": "900"
+    },
+    {
+        "id":3,
+        "productName": "Persona 5 Royal PS5",
+        "imageSrc": "data_images/persona.jpg",
+        "price": "25"
+    }
+   
+
+]

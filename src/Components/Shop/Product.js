@@ -1,6 +1,7 @@
 import React from "react";
 
-function Product(props){
+function Product(props) {
+   
     return(
     <div className="shopping-card">
         <div className="card">
@@ -13,8 +14,8 @@ function Product(props){
         <div className="price">
         <p>Price: {props.price}$</p>
         </div>
-        <button>Buy</button>
-       
+        <button onClick={() => props.increaseQuantity(props.productName)}>Buy</button>
+        {props.quantity}
         </div>
     </div>
     )

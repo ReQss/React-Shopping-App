@@ -1,5 +1,6 @@
 import React from "react";
 import Alert from 'react'
+import '../styles/Contact.css'
 function Contact() {
     const [formData, setFormData] = React.useState({
         firstName: "",

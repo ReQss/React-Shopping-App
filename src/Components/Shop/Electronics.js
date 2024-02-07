@@ -1,39 +1,28 @@
 import React from "react";
 import Product from './Product'
 
-function Electronics(){
+import electronics_Data from '../../Data/electronics_data.json';
+function Electronics(props) {
     return(
-    <div className="shop-electronics">
+        <div className="shop-electronics">
        <div className="section-title">
                 <h2>Electronics</h2>
                   <hr class="solid"/>
         </div>
-        <div className="product-list">
-        <Product
-        productName="Playstation 3"
-        imageSrc="playstation.png"
-        price="1300"
-        ></Product>
-        <Product
-        productName="Xbox One"
-        imageSrc="xbox.png"
-        price="900"
-        ></Product>
-        <Product
-        productName="Nintendo Switch 32GB"
-        imageSrc="nintendo.png"
-        price="700"
-        ></Product>
-        <Product
-        productName="Playstation 4"
-        imageSrc="playstation.png"
-        price="900"
-        ></Product>
-        <Product
-        productName="Nintendo Switch 32GB"
-        imageSrc="nintendo.png"
-        price="700"
-        ></Product>
+            <div className="product-list">
+                  {props.products.map(record => {
+                    return (
+                        <Product
+                            key={record.id}
+                            productName={record.productName}
+                            imageSrc={record.imageSrc}
+                            price={record.price}
+                            quantity={record.quantity}
+                            increaseQuantity = {props.increaseQuantity}
+                        />
+                    )
+                })}
+      
         </div>
     </div>
     )
