@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-shopping-app/static/css/main.0461e51f.css",
+    "main.js": "/react-shopping-app/static/js/main.9f735458.js",
+    "static/js/592.fb9d9aed.chunk.js": "/react-shopping-app/static/js/592.fb9d9aed.chunk.js",
+    "static/media/playstation.png": "/react-shopping-app/static/media/playstation.b40d8f23a893d57945e5.png",
+    "index.html": "/react-shopping-app/index.html",
+    "main.0461e51f.css.map": "/react-shopping-app/static/css/main.0461e51f.css.map",
+    "main.9f735458.js.map": "/react-shopping-app/static/js/main.9f735458.js.map",
+    "592.fb9d9aed.chunk.js.map": "/react-shopping-app/static/js/592.fb9d9aed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0461e51f.css",
+    "static/js/main.9f735458.js"
+  ]
+}
