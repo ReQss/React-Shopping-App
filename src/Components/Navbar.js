@@ -36,7 +36,7 @@ function Navbar(props){
           <Link to="/Login"><button>Login</button></Link>
             
           <Link to="/ShopCart"><img src={cart_icon}></img></Link>
-          <div className="nav-cart-count">0</div>
+          <div className="nav-cart-count">{ props.totalQuantity}</div>
           </div>
     </div>
     )

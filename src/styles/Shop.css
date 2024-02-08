@@ -79,3 +79,10 @@ hr.solid {
   border-top: 3px solid #b8b8b8;
   width: 90%;
 }
+.shop-cart {
+  display: flex;
+  flex-direction: column;
+}
+.shop-cart img {
+  width: 20px;
+}
