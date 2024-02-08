@@ -6,7 +6,7 @@ function Games(props){
             <div className="section-title">
        
         <h2>Games</h2>
-      <hr class="solid"/>
+      <hr className="solid"/>
         </div>
             <div className="product-list">
                 {props.products.map(record => {

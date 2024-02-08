@@ -7,7 +7,7 @@ function Electronics(props) {
         <div className="shop-electronics">
        <div className="section-title">
                 <h2>Electronics</h2>
-                  <hr class="solid"/>
+                  <hr className="solid"/>
         </div>
             <div className="product-list">
                   {props.products.map(record => {

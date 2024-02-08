@@ -15,7 +15,6 @@ function Product(props) {
         <p>Price: {props.price}$</p>
         </div>
         <button onClick={() => props.increaseQuantity(props.productName)}>Buy</button>
-        {/* {props.quantity} */}
         </div>
     </div>
     )
