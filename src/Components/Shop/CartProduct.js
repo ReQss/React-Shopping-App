@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/Shop.css';
-
+// 
 function CartProduct(props) {
     return(
         <div className='cart-product'>

@@ -3,7 +3,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%); */
+  background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
 }
 .shop h1 {
   justify-content: center;
@@ -70,11 +71,12 @@ shop-games h2 {
   font-size: 17px;
   background: white;
   cursor: pointer;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
-.card button:hover {
-  transform: scale(1.2);
+.card button:active {
+  background: #d0d9ff;
 }
+
 hr.solid {
   border-top: 3px solid #b8b8b8;
   width: 90%;
@@ -85,13 +87,39 @@ hr.solid {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%); */
+  background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
+
   display: flex;
   flex-direction: column;
 }
-.cart-product img {
-  width: 20px;
-  height: 20px;
+.shop-cart table {
+  width: 100%;
+  background: whitesmoke;
+}
+.table-button {
+  box-shadow: 0;
+}
+.shop-cart table,
+th,
+td {
+  box-shadow: 0 1px 3px -2px black;
+  text-align: center;
+}
+
+.shop-cart th {
+  font-family: "poppins";
+  font-weight: 600;
+  color: gray;
+}
+.shop-cart td {
+  font-family: "poppins";
+  font-weight: 500;
+}
+
+.shop-cart img {
+  width: 60px;
+  height: 60px;
 }
 .cart-product {
   display: flex;
@@ -108,4 +136,40 @@ hr.solid {
   flex-direction: column;
   gap: 3px;
   margin-left: 30px;
+}
+.table-button {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #1b46ff;
+  outline: none;
+  border-radius: 16px;
+  color: #ececec;
+}
+.table-button:active {
+  background: #d0d9ff;
+}
+.product-quantity-btn {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  font-family: poppins;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border-radius: 16px;
+  color: gray;
+}
+@media screen and (max-width: 500px) {
+  .quantity {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }

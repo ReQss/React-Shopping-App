@@ -43,6 +43,26 @@ function App() {
             });
         });
   };
+  const decreaseGameQuantity = productName => {
+        setGameProducts(prevProducts => {
+            return prevProducts.map(product => {
+                if (product.productName === productName) {
+                    return { ...product, quantity: product.quantity - 1 };
+                }
+                return product;
+            });
+        });
+  };
+  const decreaseElectronicQuantity = productName => {
+        setElectronicProducts(prevProducts => {
+            return prevProducts.map(product => {
+                if (product.productName === productName) {
+                    return { ...product, quantity: product.quantity - 1 };
+                }
+                return product;
+            });
+        });
+    };
   const calculateTotalQuantity = (products) => {
     let total = 0;
     for (let i = 0; i < products.length; i++){
@@ -65,12 +85,13 @@ function App() {
       <div className="App">
         <Navbar totalQuantity={totalQuantity} />
         <Routes>
+          <Route path="/React-Shopping-App/" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} />} />
 
           <Route path="/register" element={<Register />} />
-          <Route path="/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} />} />
+          <Route path="/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
         </Routes>
         
       </div>
