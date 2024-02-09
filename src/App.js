@@ -8,7 +8,7 @@ import Contact from './Components/Contact'
 import Register from './Components/Register'
 import Shop from './Components/Shop'
 import ShopCart from './Components/ShopCart'
-
+import Image from './mario.jpg'
 import electronics_Data from './Data/electronics_data.json';
 import games_Data from './Data/games_data.json'
 function App() {
