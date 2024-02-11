@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/Navbar.css'
 import './App.css';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer'
 import Home from './Components/Home';
 import Contact from './Components/Contact'
 import Register from './Components/Register'
@@ -11,6 +12,7 @@ import ShopCart from './Components/ShopCart'
 import Image from './mario.jpg'
 import electronics_Data from './Data/electronics_data.json';
 import games_Data from './Data/games_data.json'
+
 function App() {
   const initialElectronicProductsState = electronics_Data.map(record => ({
         ...record,
@@ -87,14 +89,15 @@ function App() {
         <Routes>
           <Route path="/React-Shopping-App/" element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/shop" element={<Shop electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} />} />
+          <Route path="/React-Shopping-App/contact" element={<Contact />} />
+          <Route path="/React-Shopping-App/shop" element={<Shop electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} />} />
 
-          <Route path="/register" element={<Register />} />
-          <Route path="/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
+          <Route path="/React-Shopping-App/register" element={<Register />} />
+          <Route path="/React-Shopping-App/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
         </Routes>
-        
+        <Footer/>
       </div>
+      
     </Router>
   );
 }

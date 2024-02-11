@@ -27,7 +27,7 @@ function ShopCart(props) {
                       </tr>
                       {CartProducts.map(record => (
                           <tr>
-                              <td><img src={"./React-Shopping-App/" + record.imageSrc}></img></td>
+                              <td><img src={record.imageSrc}></img></td>
                               <td>{record.productName}</td>
                               <td>{record.price}</td>
                               <td className='quantity'>

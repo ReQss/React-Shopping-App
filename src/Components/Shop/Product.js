@@ -6,7 +6,7 @@ function Product(props) {
     <div className="shopping-card">
         <div className="card">
       
-        <img src={"./React-Shopping-App/" + props.imageSrc}></img>
+        <img src={props.imageSrc}></img>
         
         <div className="card-details">
         <h3 className="card-title">{props.productName}</h3>

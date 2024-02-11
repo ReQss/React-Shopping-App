@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import  { useState, useEffect } from 'react';
-import logo from '../Assets/logo.png'
+import logo from '../Assets/logo2.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from "react-router-dom";
 import nav_dropdown from '../Assets/dropdown.png'
@@ -15,27 +15,27 @@ function Navbar(props){
         <div className="navbar">
           <div  onClick={() => { setMenu("") }} className="nav-logo">
           <Link to="/">
-            <img 
-            width="49"
-            height="30"
+            <a href="/React-Shopping-App/"><img 
+            width="40"
+            height="40"
             src={logo}
-            />
+            /></a>
             </Link>
           </div>
           <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
           <ul ref={menuRef} className="nav-menu" >
-          <li onClick={() => { setMenu("shop") }}><Link className="nav-link" to="/shop">Shop</Link>{menu === "shop" ? <hr /> : <></>}</li>
+          <li onClick={() => { setMenu("shop") }}><Link className="nav-link" to="/React-Shopping-App/shop">Shop</Link>{menu === "shop" ? <hr /> : <></>}</li>
           
           
-          <li onClick={()=>{setMenu("contact")}}><Link   className="nav-link" to="/contact">Contact</Link> {menu==="contact" ? <hr/> :<></> }</li>
-          <li onClick={()=>{setMenu("about")}}><Link   className="nav-link" to="/about">About us</Link>{menu==="about" ? <hr/> :<></> }</li>
+          <li onClick={()=>{setMenu("contact")}}><Link   className="nav-link" to="/React-Shopping-App/contact">Contact</Link> {menu==="contact" ? <hr/> :<></> }</li>
+          <li onClick={()=>{setMenu("about")}}><Link   className="nav-link" to="/React-Shopping-App/about">About us</Link>{menu==="about" ? <hr/> :<></> }</li>
          
           </ul>
 
           <div className="nav-login-cart">
-          <Link to="/Login"><button>Login</button></Link>
+          <Link to="/React-Shopping-App/Login"><button>Login</button></Link>
             
-          <Link to="/ShopCart"><img src={cart_icon}></img></Link>
+          <Link to="/React-Shopping-App/ShopCart"><img src={cart_icon}></img></Link>
           <div className="nav-cart-count">{ props.totalQuantity}</div>
           </div>
     </div>

@@ -47,7 +47,8 @@
   width: 80%;
   height: 3px;
   border-radius: 10px;
-  background: #ff4141;
+  background: #3b60ff;
+  /* zmienic */
 }
 .nav-login-cart {
   display: flex;
@@ -87,7 +88,8 @@
     padding: 12px 50px;
   }
   .nav-logo img {
-    width: 40px;
+    width: 30px;
+    height: 30px;
   }
   .nav-login-cart {
     gap: 30px;

@@ -8,7 +8,7 @@ function Home(){
         <div className="hero-left">
         <h2>Future of the games!</h2>
         <p>Check out our new content below</p>
-       <Link className="nav-link" to="/shop">
+       <Link className="nav-link" to="/React-Shopping-App/shop">
        
         <div className="hero-latest-btn">
        

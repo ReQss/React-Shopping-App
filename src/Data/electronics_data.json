@@ -2,7 +2,7 @@
     {
         "id":1,
         "productName": "Playstation 3",
-        "imageSrc": "/data_images/playstation.png",
+        "imageSrc": "data_images/playstation.png",
         "price": "1300"
     },
     {

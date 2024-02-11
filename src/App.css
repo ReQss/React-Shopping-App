@@ -36,8 +36,6 @@
   border-radius: 75px;
   margin-top: 30px;
   background: #0030ff;
-  /* #cbc9ff, #e1ffea22 */
-
   color: white;
   font-size: 22px;
   font-weight: 500;
@@ -60,20 +58,6 @@
     gap: 20px;
     padding-left: 50px;
     line-height: 1.1;
-  }
-  .hero-latest-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 250px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
   }
 }
 
@@ -131,4 +115,102 @@
 }
 .menu-button:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #3b60ff;
+  width: 100%;
+  min-height: 40vh;
+  color: white;
+}
+
+.company-section {
+  /* margin-left: 10%; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40%;
+}
+.company-info {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.company-info p {
+  width: 80%;
+  color: #d2d2d2;
+  font-size: 10px;
+  font-family: poppins;
+}
+
+.footer-links {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-links ul {
+  padding: 0 0.6rem;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  padding-left: 0;
+}
+.footer-links li {
+  color: #a8a8a8;
+  padding: 0.25rem 0;
+  font-size: 10px;
+  font-family: poppins;
+  font-weight: 600;
+  transition: 0.1s;
+}
+.footer-links a {
+  text-decoration: none;
+}
+.footer-links li:hover {
+  color: #d2d2d2;
+}
+.footer-contact {
+  width: 30%;
+  padding-bottom: 40px;
+}
+.company-socials {
+  width: 100%;
+}
+.company-socials i {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #0030ff;
+  margin: 0.8rem;
+  margin-left: 0;
+  border-radius: 50%;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.company-socials i:active {
+  color: gray;
+}
+@media screen and (max-width: 608px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .company-section {
+    text-align: center;
+  }
+  .footer-links {
+    text-align: center;
+  }
+  .footer-contact {
+    text-align: center;
+  }
+  .company-socials {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .company-info p {
+    width: 100%;
+  }
 }
