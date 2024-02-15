@@ -5,7 +5,7 @@ function Login() {
     const login = React.useState();
     return(
         <div className="login">
-           <h2>Login</h2>
+           <h2 >Login</h2>
             <hr className="solid" />
            
             <form className="userForm" >

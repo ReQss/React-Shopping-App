@@ -16,7 +16,17 @@
   background: whitesmoke;
   padding: 20px;
 }
-@media screen and (max-width: 1024px) {
+.userForm {
+  /* height: 100vh; */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px -2px black;
+  text-align: center;
+  background: whitesmoke;
+  padding: 20px;
+}
+@media screen and (max-width: 560px) {
   .userForm {
     width: 70%;
   }
