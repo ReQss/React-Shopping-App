@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/React-Shopping-App/static/css/main.b6e1bdec.css",
-    "main.js": "/React-Shopping-App/static/js/main.2e88f163.js",
+    "main.css": "/React-Shopping-App/static/css/main.f7a0fa90.css",
+    "main.js": "/React-Shopping-App/static/js/main.4b6bbc83.js",
     "static/js/592.fb9d9aed.chunk.js": "/React-Shopping-App/static/js/592.fb9d9aed.chunk.js",
     "static/media/playstation.png": "/React-Shopping-App/static/media/playstation.b40d8f23a893d57945e5.png",
     "static/media/mario.jpg": "/React-Shopping-App/static/media/mario.dd4987d3df2de4b54161.jpg",
     "static/media/logo2.png": "/React-Shopping-App/static/media/logo2.98087e6d5f9b6f478521.png",
     "index.html": "/React-Shopping-App/index.html",
-    "main.b6e1bdec.css.map": "/React-Shopping-App/static/css/main.b6e1bdec.css.map",
-    "main.2e88f163.js.map": "/React-Shopping-App/static/js/main.2e88f163.js.map",
+    "main.f7a0fa90.css.map": "/React-Shopping-App/static/css/main.f7a0fa90.css.map",
+    "main.4b6bbc83.js.map": "/React-Shopping-App/static/js/main.4b6bbc83.js.map",
     "592.fb9d9aed.chunk.js.map": "/React-Shopping-App/static/js/592.fb9d9aed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6e1bdec.css",
-    "static/js/main.2e88f163.js"
+    "static/css/main.f7a0fa90.css",
+    "static/js/main.4b6bbc83.js"
   ]
 }
