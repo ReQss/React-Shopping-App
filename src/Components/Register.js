@@ -13,7 +13,7 @@ function Register() {
                 <input placeholder="Last name" type="email"/>
                 <input placeholder="Email" type="email"/>
                 <input placeholder="Password" type="password" />
-                <input type="button" value="SIGN IN" className="submit-input" />
+                <input type="button" value="SIGN UP" className="submit-input" />
              <p>By clicking Register, you aree on our <Link to="/React-Shopping-App/register">Privacy Policy</Link></p>
       
             </form>

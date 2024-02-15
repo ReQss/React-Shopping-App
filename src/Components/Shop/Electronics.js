@@ -3,6 +3,7 @@ import Product from './Product'
 
 import electronics_Data from '../../Data/electronics_data.json';
 function Electronics(props) {
+
     return(
         <div className="shop-electronics">
        <div className="section-title">
@@ -13,6 +14,7 @@ function Electronics(props) {
                   {props.products.map(record => {
                     return (
                         <Product
+                            shopNotification={props.shopNotification}
                             key={record.id}
                             productName={record.productName}
                             imageSrc={record.imageSrc}

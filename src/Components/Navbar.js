@@ -14,12 +14,12 @@ function Navbar(props){
     return(
         <div className="navbar">
           <div  onClick={() => { setMenu("") }} className="nav-logo">
-          <Link to="/">
-            <a href="/React-Shopping-App/"><img 
+          <Link to="/React-Shopping-App/">
+           <img 
             width="40"
             height="40"
             src={logo}
-            /></a>
+            />
             </Link>
           </div>
           <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
