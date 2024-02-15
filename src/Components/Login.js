@@ -1,13 +1,20 @@
 import React from "react";
 import '../styles/Login.css'
-function Login(){
+import { Link } from "react-router-dom";
+function Login() {
+    const login = React.useState();
     return(
         <div className="login">
-           <h2>Sign in</h2>
+           <h2>Login</h2>
             <hr className="solid" />
-            <form className="loginForm" >
-
-           </form>
-        </div>
+           
+            <form className="userForm" >
+                <input placeholder="Email" type="email"/>
+                <input placeholder="Password" type="password" />
+                <input type="button" value="SIGN IN" className="submit-input" />
+              <p>Don't have an account? <Link to="/React-Shopping-App/register">Sign up</Link></p>
+      
+            </form>
+            </div>
     )
 }export default Login;

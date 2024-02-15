@@ -1,7 +1,59 @@
 .login {
   align-items: center;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
 }
+.userForm {
+  /* height: 100vh; */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px -2px black;
+  text-align: center;
+  background: whitesmoke;
+  padding: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .userForm {
+    width: 70%;
+  }
+}
+.userForm input {
+  padding: 5px;
+  margin: 10px;
+}
+.login p {
+  font-size: 14px;
+}
+.submit-input {
+  background: #0f0f0f;
+  outline: none;
+  color: whitesmoke;
+  width: 90px;
+  cursor: pointer;
+  border: 1px solid #626262;
+  transition: 0.3s;
+}
+.submit-input:active {
+  background: #626262;
+}
+
+/* .shop-cart table,
+th,
+td {
+  box-shadow: 0 1px 3px -2px black;
+  text-align: center;
+}
+
+.shop-cart th {
+  font-family: "poppins";
+  font-weight: 600;
+  color: gray;
+}
+.shop-cart td {
+  font-family: "poppins";
+  font-weight: 500;
+} */
