@@ -1,9 +1,12 @@
 .navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 1px 3px -2px black;
   height: 10vh;
+  background: white;
   padding: 16px;
 }
 .nav-logo {

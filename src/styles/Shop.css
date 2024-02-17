@@ -1,4 +1,6 @@
 .shop {
+  padding-top: 13vh;
+  /* margin-top: 10vh; */
   align-items: center;
   min-height: 100vh;
   display: flex;
@@ -42,10 +44,6 @@ shop-games h2 {
   text-align: center;
   border: black;
   width: 17rem;
-
-  /* margin-left:20rem; */
-  /* margin-top:2rem; */
-  /* z-index:-2; */
 }
 .card {
   margin: 20px;
@@ -84,6 +82,7 @@ hr.solid {
 .shop-cart {
   min-height: 100vh;
   padding: 50px;
+  padding-top: 13vh;
   display: flex;
   flex-direction: column;
   /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%); */

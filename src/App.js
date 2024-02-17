@@ -86,6 +86,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar totalQuantity={totalQuantity} />
+       
         <Routes>
           <Route path="/React-Shopping-App/" element={<Home />} />
           <Route path="/" element={<Home />} />
@@ -94,7 +95,8 @@ function App() {
           <Route path="/React-Shopping-App/login" element={<Login/>}/>
           <Route path="/React-Shopping-App/register" element={<Register />} />
           <Route path="/React-Shopping-App/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
-        </Routes>
+          </Routes>
+          
         <Footer/>
       </div>
       
