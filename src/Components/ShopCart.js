@@ -25,25 +25,39 @@ function ShopCart(props) {
                         <th>Price</th>
                         <th>Quantity</th>
                       </tr>
-                      {CartProducts.map(record => (
+                      {props.electronicProducts.filter(record => record.quantity >0).map( record => (
                           <tr>
                               <td><img src={record.imageSrc}></img></td>
                               <td>{record.productName}</td>
                               <td>{record.price}</td>
                               <td className='quantity'>
-                                   <button onClick={props.increase} className='product-quantity-btn'>-</button>
-                             
+                                   <button onClick={() => props.decreaseElectronicQuantity(record.productName)} className='product-quantity-btn'>-</button>
+
                                  {record.quantity}
                                   
-                                  <button className='product-quantity-btn'>+</button>
+                                  <button onClick={() => props.increaseElectronicQuantity(record.productName)} className='product-quantity-btn'>+</button>
                               </td>
                              
-                          </tr>))}
+                        </tr>))}
+                        {props.gameProducts.filter(record => record.quantity >0).map( record => (
+                                  <tr>
+                                      <td><img src={record.imageSrc}></img></td>
+                                      <td>{record.productName}</td>
+                                      <td>{record.price}</td>
+                                      <td className='quantity'>
+                                          <button onClick={() => props.decreaseGameQuantity(record.productName)} className='product-quantity-btn'>-</button>
+                                    
+                                        {record.quantity}
+                                          
+                                          <button onClick={() => props.increaseGameQuantity(record.productName)} className='product-quantity-btn'>+</button>
+                                      </td>
+                                    
+                                  </tr>))}
                       <tr >
                         <td></td>
                         <td></td>
                         <td></td>
-                          <td><button className='table-button'>Send</button></td>
+                          <td><button className='table-button'>Purchase</button></td>
                       </tr>
                       </table>
                       </div>

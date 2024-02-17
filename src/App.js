@@ -48,7 +48,7 @@ function App() {
   const decreaseGameQuantity = productName => {
         setGameProducts(prevProducts => {
             return prevProducts.map(product => {
-                if (product.productName === productName) {
+                if (product.productName === productName && product.quantity > 0) {
                     return { ...product, quantity: product.quantity - 1 };
                 }
                 return product;
