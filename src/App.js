@@ -8,6 +8,7 @@ import Home from './Components/Home';
 import Contact from './Components/Contact'
 import Register from './Components/Register'
 import Shop from './Components/Shop'
+import About from './Components/About'
 import ShopCart from './Components/ShopCart'
 import Image from './mario.jpg'
 import electronics_Data from './Data/electronics_data.json';
@@ -95,7 +96,9 @@ function App() {
           <Route path="/React-Shopping-App/login" element={<Login/>}/>
           <Route path="/React-Shopping-App/register" element={<Register />} />
           <Route path="/React-Shopping-App/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
-          </Routes>
+          <Route path="/React-Shopping-App/about" element={<About/>} />
+          
+        </Routes>
           
         <Footer/>
       </div>

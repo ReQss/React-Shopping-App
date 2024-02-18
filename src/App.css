@@ -215,3 +215,13 @@
     width: 100%;
   }
 }
+.about {
+  padding-top: 13vh;
+  /* margin-top: 10vh; */
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
+  padding-bottom: 10vh;
+}
