@@ -58,6 +58,9 @@
   align-items: center;
   gap: 45px;
 }
+.nav-login-cart img {
+  width: 35px;
+}
 .nav-login-cart button {
   width: 157px;
   height: 58px;

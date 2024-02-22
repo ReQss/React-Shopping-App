@@ -28,6 +28,89 @@
         "productName": "Pegazus",
         "imageSrc": "data_images/pegasus.jfif",
         "price": "100"
+    },
+    {
+        "id": 6,
+        "productName": "iPhone 13",
+        "imageSrc": "data_images/iphone.png",
+        "price": "1100"
+    },
+    {
+        "id": 7,
+        "productName": "Samsung Galaxy S21",
+        "imageSrc": "data_images/samsung.png",
+        "price": "1200"
+    },
+    {
+        "id": 8,
+        "productName": "Dell XPS 13 Laptop",
+        "imageSrc": "data_images/dell_laptop.png",
+        "price": "1600"
+    },
+    {
+        "id": 9,
+        "productName": "Sony WH-1000XM4 Wireless Headphones",
+        "imageSrc": "data_images/sony_headphones.png",
+        "price": "350"
+    },
+    {
+        "id": 10,
+        "productName": "Canon EOS Rebel T7 DSLR Camera",
+        "imageSrc": "data_images/canon_camera.png",
+        "price": "600"
+    },
+      {
+        "id": 11,
+        "productName": "Apple MacBook Air",
+        "imageSrc": "data_images/macbook_air.png",
+        "price": "1200"
+    },
+    {
+        "id": 12,
+        "productName": "LG OLED C1 4K TV",
+        "imageSrc": "data_images/lg_tv.png",
+        "price": "2000"
+    },
+    {
+        "id": 13,
+        "productName": "Amazon Echo Dot (4th Gen)",
+        "imageSrc": "data_images/echo_dot.png",
+        "price": "50"
+    },
+    {
+        "id": 14,
+        "productName": "Fitbit Versa 3 Smartwatch",
+        "imageSrc": "data_images/fitbit_versa.png",
+        "price": "230"
+    },
+    {
+        "id": 15,
+        "productName": "Google Nest Hub Max",
+        "imageSrc": "data_images/google_nest_hub.png",
+        "price": "250"
+    },
+    {
+        "id": 17,
+        "productName": "Microsoft Surface Pro 7",
+        "imageSrc": "data_images/surface_pro.png",
+        "price": "1000"
+    },
+    {
+        "id": 18,
+        "productName": "GoPro Hero 10 Black",
+        "imageSrc": "data_images/gopro_camera.png",
+        "price": "500"
+    },
+    {
+        "id": 19,
+        "productName": "Logitech MX Master 3 Wireless Mouse",
+        "imageSrc": "data_images/logitech_mouse.png",
+        "price": "100"
+    },
+    {
+        "id": 20,
+        "productName": "Raspberry Pi 4 Model B",
+        "imageSrc": "data_images/raspberry_pi.png",
+        "price": "50"
     }
-
 ]

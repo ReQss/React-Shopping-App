@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import  { useState, useEffect } from 'react';
 import logo from '../Assets/logo2.png'
 import cart_icon from '../Assets/cart_icon.png'
+import settings_icon from '../Assets/settings.png'
 import { Link } from "react-router-dom";
 import nav_dropdown from '../Assets/dropdown.png'
 function Navbar(props){
@@ -36,7 +37,9 @@ function Navbar(props){
           <Link to="/React-Shopping-App/login"><button>Login</button></Link>
             
           <Link to="/React-Shopping-App/ShopCart"><img src={cart_icon}></img></Link>
-          <div className="nav-cart-count">{ props.totalQuantity}</div>
+            <div className="nav-cart-count">{props.totalQuantity}</div>
+          <Link to="/React-Shopping-App/settings"><img src={settings_icon}></img></Link>
+         
           </div>
     </div>
     )

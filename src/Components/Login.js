@@ -8,7 +8,8 @@ function Login() {
            <h2 >Login</h2>
             <hr className="solid" />
            
-            <form className="userForm" >
+        <form className="userForm" >
+                <h4>LOGIN FORM</h4>
                 <input placeholder="Email" type="email"/>
                 <input placeholder="Password" type="password" />
                 <input type="button" value="SIGN IN" className="submit-input" />

@@ -16,6 +16,66 @@
         "productName": "Persona 5 Royal PS5",
         "imageSrc": "data_images/persona.jpg",
         "price": "25"
+    },
+       {
+        "id": 1004,
+        "productName": "Call of Duty: Vanguard - PS5",
+        "imageSrc": "data_images/cod.jpg",
+        "price": "60"
+    },
+    {
+        "id": 1005,
+        "productName": "Halo Infinite - Xbox Series X",
+        "imageSrc": "data_images/halo.jpg",
+        "price": "70"
+    },
+    {
+        "id": 1006,
+        "productName": "FIFA 22 - Nintendo Switch",
+        "imageSrc": "data_images/fifa.jpg",
+        "price": "50"
+    },
+    {
+        "id": 1007,
+        "productName": "Assassin's Creed Valhalla - PS4",
+        "imageSrc": "data_images/assassins_creed.jpg",
+        "price": "55"
+    },
+    {
+        "id": 1008,
+        "productName": "Minecraft - PC",
+        "imageSrc": "data_images/minecraft.jpg",
+        "price": "20"
+    },
+    {
+        "id": 1009,
+        "productName": "Animal Crossing: New Horizons - Nintendo Switch",
+        "imageSrc": "data_images/animal_crossing.jpg",
+        "price": "45"
+    },
+    {
+        "id": 1010,
+        "productName": "The Last of Us Part II - PS4",
+        "imageSrc": "data_images/last_of_us.jpg",
+        "price": "50"
+    },
+    {
+        "id": 1011,
+        "productName": "Super Smash Bros. Ultimate - Nintendo Switch",
+        "imageSrc": "data_images/super_smash.jpg",
+        "price": "55"
+    },
+    {
+        "id": 1012,
+        "productName": "Final Fantasy VII Remake - PS4",
+        "imageSrc": "data_images/final_fantasy.jpg",
+        "price": "40"
+    },
+    {
+        "id": 1013,
+        "productName": "Cyberpunk 2077 - Xbox One",
+        "imageSrc": "data_images/cyberpunk.jpg",
+        "price": "30"
     }
    
 

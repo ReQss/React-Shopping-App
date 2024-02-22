@@ -160,6 +160,9 @@
   color: gray;
 }
 @media screen and (max-width: 608px) {
+  .hero-right img {
+    width: 0%;
+  }
   .footer {
     display: flex;
     align-items: center;

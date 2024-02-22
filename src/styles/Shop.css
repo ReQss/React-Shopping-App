@@ -59,7 +59,7 @@ shop-games h2 {
 }
 .card-title {
   margin-bottom: 1rem;
-  height: 50px;
+  height: 65px;
 }
 .card button {
   width: 70px;
@@ -93,7 +93,7 @@ hr.solid {
 }
 .shop-cart table {
   width: 100%;
-  background: whitesmoke;
+  background: white;
 }
 .table-button {
   box-shadow: 0;

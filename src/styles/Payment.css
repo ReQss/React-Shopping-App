@@ -23,6 +23,7 @@
   border-radius: 25px;
   color: #515151;
   background: whitesmoke;
+  text-align: left;
 }
 .payment-card img {
   width: 80px;
@@ -121,6 +122,9 @@
     width: 100%;
     padding-left: 0%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .personal-info {
     width: 100%;
@@ -136,7 +140,9 @@
   .card-info {
     width: 100%;
     padding-left: 0%;
-    text-align: left;
+  }
+  .personal-info input {
+    padding: 5px;
   }
   .personal-info {
     width: 100%;
