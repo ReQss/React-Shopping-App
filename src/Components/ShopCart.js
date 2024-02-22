@@ -1,7 +1,9 @@
 import React from 'react'
 import CartProduct from '../Components/Shop/CartProduct'
 import '../styles/Shop.css'
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
+import { Link } from "react-router-dom";
 function ShopCart(props) {
     
     const [CartProducts, setCartProducts] = React.useState([]);
@@ -57,8 +59,9 @@ function ShopCart(props) {
                         <td></td>
                         <td></td>
                         <td></td>
-                          <td><button className='table-button'>Purchase</button></td>
-                      </tr>
+                          <td><Link to="/React-Shopping-App/payment"><button className='table-button'>Purchase</button></Link></td>
+                       
+                </tr>
                       </table>
                       </div>
                 :<h1>Your list is empty.</h1>}

@@ -63,39 +63,6 @@
   }
 }
 
-.Login {
-  margin-top: 5vh;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* margin-left:5vh; */
-  width: 45%;
-  height: 80vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #1b2430;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(123, 189, 255, 0.3);
-  font-family: "Brush Script MT", cursive;
-}
-.Login input {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: none;
-  border: 1px solid rgba(123, 189, 255, 1);
-  border-radius: 16px;
-}
-.Login input::placeholder {
-  color: white;
-}
-
-.userForm {
-  text-align: center;
-}
 .menu-button {
   margin-bottom: 20px;
   width: 90%;

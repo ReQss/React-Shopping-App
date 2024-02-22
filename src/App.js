@@ -10,6 +10,7 @@ import Register from './Components/Register'
 import Shop from './Components/Shop'
 import About from './Components/About'
 import ShopCart from './Components/ShopCart'
+import Payment from './Components/Payment';
 import Image from './mario.jpg'
 import electronics_Data from './Data/electronics_data.json';
 import games_Data from './Data/games_data.json'
@@ -97,6 +98,7 @@ function App() {
           <Route path="/React-Shopping-App/register" element={<Register />} />
           <Route path="/React-Shopping-App/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
           <Route path="/React-Shopping-App/about" element={<About/>} />
+          <Route path="/React-Shopping-App/payment" element={<Payment/>} />
           
         </Routes>
           
