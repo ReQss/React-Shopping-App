@@ -15,6 +15,7 @@ import Image from './mario.jpg'
 import electronics_Data from './Data/electronics_data.json';
 import games_Data from './Data/games_data.json'
 import Login from './Components/Login'
+import Settings from './Components/Settings'
 function App() {
   const initialElectronicProductsState = electronics_Data.map(record => ({
         ...record,
@@ -99,6 +100,7 @@ function App() {
           <Route path="/React-Shopping-App/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
           <Route path="/React-Shopping-App/about" element={<About/>} />
           <Route path="/React-Shopping-App/payment" element={<Payment/>} />
+          <Route path="/React-Shopping-App/settings" element={<Settings/>} />
           
         </Routes>
           

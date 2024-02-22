@@ -256,3 +256,12 @@
     width: 90%;
   }
 }
+.settings {
+  align-items: center;
+  padding-top: 13vh;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
+}
