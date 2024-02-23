@@ -3,9 +3,9 @@ import '../App.css'
 import { Link } from "react-router-dom";
 
 import image from '../Assets/about.png'
-function About() {
+function About(props ) {
     return(
-        <div className="about">
+        <div className="about"style={{ background:  props.styles.background,color :props.styles.font_color  }}>
            <h2 >About</h2>
             <hr className="solid" />
             <div className="about-content">

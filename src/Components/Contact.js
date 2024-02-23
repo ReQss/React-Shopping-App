@@ -1,7 +1,7 @@
 import React from "react";
 import Alert from 'react'
 import '../styles/Contact.css'
-function Contact() {
+function Contact(props) {
     const [formData, setFormData] = React.useState({
         firstName: "",
         lastName:"",
@@ -28,7 +28,7 @@ function Contact() {
     }
    
     return(
-    <div className="contact">
+    <div className="contact" style={{ background:  props.styles.background,color :props.styles.font_color  }}>
             <h2>Contact us</h2>
             <hr className="solid" />
             <form className="contactForm" onSubmit={handleSubmit}>
@@ -40,14 +40,16 @@ function Contact() {
 
 
             <div className="first-row">
-                <input
+                    <input
+                    style={{background:props.styles.mode? props.styles.extras:""}}
                     placeholder="First name"
                     type="text"
                     onChange={handleChange}
                     name="firstName"
                     value={formData.firstName}
                 />
-                <input
+                    <input
+                      style={{background:props.styles.mode? props.styles.extras:""}}
                     placeholder="Last name"
                     type="text"
                     onChange={handleChange}
@@ -56,14 +58,16 @@ function Contact() {
                     />
             </div>
             <div className="second-row">
-                <input
+                    <input
+                          style={{background:props.styles.mode? props.styles.extras:""}}
                     placeholder="Email"
                     type="email"
                     onChange={handleChange}
                     name="email"
                     value={formData.email}
                 />
-                <textarea
+                    <textarea
+                          style={{background:props.styles.mode? props.styles.extras:""}}
                     placeholder="Comment"
                     onChange={handleChange}
                     name="message"

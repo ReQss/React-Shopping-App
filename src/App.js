@@ -15,7 +15,6 @@ import Image from './mario.jpg'
 import electronics_Data from './Data/electronics_data.json';
 import games_Data from './Data/games_data.json'
 import Login from './Components/Login'
-import Settings from './Components/Settings'
 function App() {
   const initialElectronicProductsState = electronics_Data.map(record => ({
         ...record,
@@ -83,25 +82,42 @@ function App() {
         console.log("Game Products with Quantity > 0:");
         console.log(gameProductsWithQuantity);
     }
-  displayProducts()
+  //displayProducts()
   let totalQuantity = calculateTotalQuantity(electronicProducts) + calculateTotalQuantity(gameProducts);
+  const [darkMode, setDarkMode] = React.useState({
+    mode: false,
+    nav_color: "white",
+    font_color: "black",
+    background: 'linear-gradient(180deg, #cbc9ff, #e1ffea22 60%)',
+    extras:"white"
+  })
+  const toggleDarkMode = () => {
+    setDarkMode(prevDarkMode => ({
+      ...prevDarkMode,
+      mode: !prevDarkMode.mode,
+      nav_color: prevDarkMode.mode ? "white" : "#242424",
+      font_color: prevDarkMode.mode ? "black" : "white",
+      background: prevDarkMode.mode ? "linear-gradient(180deg, #cbc9ff, #e1ffea22 60%)" : "linear-gradient(180deg, #01061a, #242424 60%)",
+      extras: prevDarkMode.mode ? "white" : "#242424"
+    }))
+  };
+
   return (
     <Router>
       <div className="App">
-        <Navbar totalQuantity={totalQuantity} />
+        <Navbar totalQuantity={totalQuantity} toggleDarkMode = {toggleDarkMode} styles={darkMode} />
        
         <Routes>
-          <Route path="/React-Shopping-App/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/React-Shopping-App/contact" element={<Contact />} />
-          <Route path="/React-Shopping-App/shop" element={<Shop electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} />} />
-          <Route path="/React-Shopping-App/login" element={<Login/>}/>
-          <Route path="/React-Shopping-App/register" element={<Register />} />
-          <Route path="/React-Shopping-App/shopcart" element={<ShopCart electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
-          <Route path="/React-Shopping-App/about" element={<About/>} />
-          <Route path="/React-Shopping-App/payment" element={<Payment/>} />
-          <Route path="/React-Shopping-App/settings" element={<Settings/>} />
-          
+          <Route path="/React-Shopping-App/" element={<Home styles = {darkMode} />} />
+          <Route path="/" element={<Home styles = {darkMode}/>} />
+          <Route path="/React-Shopping-App/contact" element={<Contact styles = {darkMode}  />} />
+          <Route path="/React-Shopping-App/shop" element={<Shop styles = {darkMode} electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} />} />
+          <Route path="/React-Shopping-App/login" element={<Login styles = {darkMode} />}/>
+          <Route path="/React-Shopping-App/register" element={<Register styles = {darkMode} />} />
+          <Route path="/React-Shopping-App/shopcart" element={<ShopCart styles = {darkMode}  electronicProducts={electronicProducts} gameProducts={gameProducts} increaseElectronicQuantity={increaseElectronicQuantity} increaseGameQuantity={increaseGameQuantity} decreaseElectronicQuantity={decreaseElectronicQuantity} decreaseGameQuantity={decreaseGameQuantity} />} />
+          <Route path="/React-Shopping-App/about" element={<About styles = {darkMode}/>} />
+          <Route path="/React-Shopping-App/payment" element={<Payment styles = {darkMode}/>} />
+
         </Routes>
           
         <Footer/>

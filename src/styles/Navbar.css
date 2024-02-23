@@ -70,7 +70,7 @@
   color: #515151;
   font-size: 20px;
   font-weight: 500;
-  background: white;
+  background: transparent;
   cursor: pointer;
 }
 .nav-login-cart button:active {
@@ -88,6 +88,7 @@
   font-size: 14px;
   background: red;
   color: white;
+  z-index: 100;
 }
 @media (max-width: 970px) {
   .navbar {
@@ -140,4 +141,9 @@
   .nav-dropdown.open {
     transform: rotate(90deg);
   }
+}
+.dark_mode_img {
+}
+.dark_mode_img:active {
+  filter: invert(0.3);
 }

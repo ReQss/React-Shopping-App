@@ -3,7 +3,7 @@
   padding-top: 10vh;
   display: flex;
   /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%); */
-  background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%);
+  /* background: linear-gradient(180deg, #cbc9ff, #e1ffea22 60%); */
 }
 .hero-left {
   flex: 1;

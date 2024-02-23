@@ -15,12 +15,12 @@ export default function Modal(props) {
       {props.modal && (
         <div className="modal">
           <div onClick={props.toggleModal} className="overlay"></div>
-          <div className="modal-content">
+          <div className="modal-content"  style={{ background: props.styles.extras }}>
             <h2>{props.productName} successfully added to the cart.</h2>
              <img src={props.imageSrc}></img>
             <div className="modal-buttons">         
-            <Link to="/React-Shopping-App/shop"><button onClick={props.toggleModal}>Back</button></Link>
-            <Link to="/React-Shopping-App/ShopCart"><button onClick={props.toggleModal}>Continue</button>
+            <Link to="/React-Shopping-App/shop"><button  style={{ background: props.styles.extras, color:props.styles.font_color }} onClick={props.toggleModal}>Back</button></Link>
+            <Link to="/React-Shopping-App/ShopCart"><button  style={{ background: props.styles.extras, color:props.styles.font_color }} onClick={props.toggleModal}>Continue</button>
             </Link>
                       </div> 
           </div>

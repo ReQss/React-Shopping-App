@@ -2,9 +2,9 @@ import React from "react";
 import hero_arrow from '../Assets/arrow.png'
 import hero_image from '../Assets/playstation.png'
 import { Link } from "react-router-dom";
-function Home(){
+function Home(props){
     return(
-    <div className="hero">
+        <div className="hero" style={{ background:  props.styles.background,color :props.styles.font_color  }}>
         <div className="hero-left">
         <h2>Future of the games!</h2>
         <p>Check out our new content below</p>

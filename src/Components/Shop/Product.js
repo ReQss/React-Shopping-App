@@ -6,14 +6,15 @@ function Product(props) {
         setModal(!modal);
     };
 
-    const addItem = () =>{
+    const addItem = () => {
         props.increaseQuantity(props.productName);
         toggleModal();
     }
-    return(
-    <div className="shopping-card">
-        <div className="card">
-        <Modal
+    return (
+        <div className="shopping-card" >
+        <div className="card"  style={{ background:  props.styles.extras, color:props.styles.font_color }}>
+                <Modal
+                    styles={props.styles}
                     toggleModal={toggleModal}
                     modal={modal}
                     productName={props.productName}

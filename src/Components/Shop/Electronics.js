@@ -14,6 +14,7 @@ function Electronics(props) {
                   {props.products.map(record => {
                     return (
                         <Product
+                            styles = {props.styles}
                             shopNotification={props.shopNotification}
                             key={record.id}
                             productName={record.productName}

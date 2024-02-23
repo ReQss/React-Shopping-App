@@ -14,13 +14,13 @@ function ShopCart(props) {
     
     // 
       return(
-      <div className="shop-cart">
+      <div className="shop-cart" style={{ background:  props.styles.background,color :props.styles.font_color  }}>
             <h2>Shop Cart</h2>
               
               {CartProducts.length > 0 ?
                   <div>
                       
-                  <table >
+              <table style={{ background: props.styles.extras }}  >
                       <tr>
                         <th></th>
                         <th>Name</th>
@@ -47,11 +47,11 @@ function ShopCart(props) {
                                       <td>{record.productName}</td>
                                       <td>{record.price}</td>
                                       <td className='quantity'>
-                                          <button onClick={() => props.decreaseGameQuantity(record.productName)} className='product-quantity-btn'>-</button>
+                                          <button  onClick={() => props.decreaseGameQuantity(record.productName)} className='product-quantity-btn'>-</button>
                                     
                                         {record.quantity}
                                           
-                                          <button onClick={() => props.increaseGameQuantity(record.productName)} className='product-quantity-btn'>+</button>
+                                          <button onClick={() => props.increaseGameQuantity(record.productName)} className='product-quantity-btn' >+</button>
                                       </td>
                                     
                                   </tr>))}
