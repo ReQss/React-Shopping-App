@@ -5,7 +5,7 @@ import cart_icon from '../Assets/cart_icon.png'
 import settings_icon from '../Assets/settings.png'
 import dark_mode_icon from '../Assets/dark_mode.png'
 import { Link } from "react-router-dom";
-import nav_dropdown from '../Assets/dropdown.png'
+import nav_dropdown from '../Assets/dropdown2.png'
 function Navbar(props){
     const [menu,setMenu] = useState("");
     const menuRef = useRef();
@@ -24,8 +24,8 @@ function Navbar(props){
             />
             </Link>
           </div>
-          <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
-          <ul ref={menuRef} className="nav-menu" >
+            <img className="nav-dropdown" style={{filter: props.styles.mode ? "invert(1)" : "invert(0)"}} onClick={dropdown_toggle} src={nav_dropdown} alt="" />
+          <ul ref={menuRef} className="nav-menu" style={{background:props.styles.extras}}>
           <li onClick={() => { setMenu("shop") }}><Link   style={{color: props.styles.mode ?  "white" : "#626262"}}className="nav-link" to="/React-Shopping-App/shop">Shop</Link>{menu === "shop" ? <hr /> : <></>}</li>
           
           
