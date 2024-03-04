@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Shopping-App/static/css/main.1b335479.css",
-    "main.js": "/React-Shopping-App/static/js/main.dd482c8a.js",
+    "main.css": "/React-Shopping-App/static/css/main.6cf8f610.css",
+    "main.js": "/React-Shopping-App/static/js/main.7e6f8b27.js",
     "static/js/592.fb9d9aed.chunk.js": "/React-Shopping-App/static/js/592.fb9d9aed.chunk.js",
     "static/media/playstation.png": "/React-Shopping-App/static/media/playstation.b40d8f23a893d57945e5.png",
     "static/media/confetti.gif": "/React-Shopping-App/static/media/confetti.0a9c36624750779f892d.gif",
@@ -12,12 +12,12 @@
     "static/media/logo2.png": "/React-Shopping-App/static/media/logo2.98087e6d5f9b6f478521.png",
     "static/media/dropdown2.png": "/React-Shopping-App/static/media/dropdown2.47a50c51e92fa6e06105.png",
     "index.html": "/React-Shopping-App/index.html",
-    "main.1b335479.css.map": "/React-Shopping-App/static/css/main.1b335479.css.map",
-    "main.dd482c8a.js.map": "/React-Shopping-App/static/js/main.dd482c8a.js.map",
+    "main.6cf8f610.css.map": "/React-Shopping-App/static/css/main.6cf8f610.css.map",
+    "main.7e6f8b27.js.map": "/React-Shopping-App/static/js/main.7e6f8b27.js.map",
     "592.fb9d9aed.chunk.js.map": "/React-Shopping-App/static/js/592.fb9d9aed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b335479.css",
-    "static/js/main.dd482c8a.js"
+    "static/css/main.6cf8f610.css",
+    "static/js/main.7e6f8b27.js"
   ]
 }
