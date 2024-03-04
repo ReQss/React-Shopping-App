@@ -255,3 +255,9 @@ body.active-modal {
   flex-direction: column;
   align-items: center;
 }
+.shop--searchbar {
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+}
